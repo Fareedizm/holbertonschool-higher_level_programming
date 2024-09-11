@@ -12,10 +12,11 @@ def new_in_list(my_list, idx, element):
     """
       
 
-    # Check if index is within the valid range
+    new_list=my_lis[:]
+   # Check if index is within the valid range
     if idx < 0 or idx >= len(my_list):
-        return None
+        return new_list
 
     # Replace the element at the specified index
-    my_list[idx] = element
-    return my_list
+    new_list[idx] = element
+    return new_list
