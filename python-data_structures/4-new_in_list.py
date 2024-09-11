@@ -10,10 +10,12 @@ def new_in_list(my_list, idx, element):
     Returns:
         A new list with the element replaced, or a copy of the original list if the index is invalid.
     """
+      
+
     # Check if index is within the valid range
     if idx < 0 or idx >= len(my_list):
-        return new_list
+        return None
 
     # Replace the element at the specified index
-    new_list[idx] = element
-    return new_list
+    my_list[idx] = element
+    return my_list
