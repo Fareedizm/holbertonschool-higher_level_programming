@@ -1,12 +1,7 @@
 #!/usr/bin/python3
-
-    def delete_at(my_list=[], idx=0):
-    
-    # Check if the index is valid
-    if idx < 0 or idx >= len(my_list):
-        return my_list
-    
-    # Create a new list excluding the item at the specified index
-    new_list = my_list[:idx] + my_list[idx + 1:]
-    
-    return new_list
+def delete_at(my_list=[], idx=0):
+    if 0 <= idx < len(my_list):
+        # Use slicing to create a new list without the item at index idx
+        return my_list[:idx] + my_list[idx + 1:]
+    # If idx is out of range or negative, return the original list
+    return my_list
