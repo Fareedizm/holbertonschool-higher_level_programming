@@ -8,6 +8,6 @@ def delete_at(my_list=[], idx=0):
     
     # Create a new list excluding the item at the specified index
     new_list = my_list
-    new_list.remove(idx)
+    new_list.remove(new_list[idx])
     
     return new_list
