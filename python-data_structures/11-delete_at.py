@@ -6,6 +6,6 @@ def delete_at(my_list=[], idx=0):
     
     # Create a new list excluding the item at index idx
     new_list = my_list
-    new_list.pop(idx)
+    new_list.remove('4')
     
     return new_list
