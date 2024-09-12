@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-def delete_at(my_list=[], idx=0):
-    # Check if the index is valid
-    if idx < 0 or idx >= len(my_list):
-        return my_list
-    
-    # Create a new list excluding the item at the given index
-    return my_list[:idx] + my_list[idx+1:]
+delete_at = __import__('11-delete_at').delete_at
+
+my_list = [1, 2, 3, 4, 5]
+idx = 3
+new_list = delete_at(my_list, idx)
+print(new_list)
+print(my_list)
